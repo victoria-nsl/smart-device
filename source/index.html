@@ -12,7 +12,32 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
-  <header class="page-header" >
+  <header class="page-header">
+    <div class="page-header__inner">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logotype-header-mobile.svg">
+          <img src="img/logotype-header-desktop.svg" width="202" height="52" alt="Логотип компании Smart Device">
+        </picture>
+      </a>
+      <div class="page-header__wrapper-links">
+        <div class="page-header__links-block">
+          <a class="page-header__link page-header__link--email" href="mailto:info@sd.ru" aria-label="Отправить сообщение компании Smart Device по email">
+            <svg role ="img" width="19" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-envelope"></use>
+            </svg>
+            <span>info@sd.ru</span>
+          </a>
+          <a class="page-header__link page-header__link--phone" href="tel:+74950005252" aria-label="Позвонить по телефону компании Smart Device">
+            <svg role ="img" width="18" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+            <span>+7 (495) 000 52 52</span>
+          </a>
+        </div>
+        <a class="page-header__button" href="#">Заказать звонок</a>
+      </div>
+    </div>
   </header>
   <main class="page-main">
     <h1>Компания, занимающаяся производством и монтажом печатных плат и поставкой комплектующих для светотехники</h1>
