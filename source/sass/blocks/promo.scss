@@ -10,11 +10,20 @@
 
   box-sizing: border-box;
 
+  background-image: url("../img/background-promo-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  background-size: auto;
+
+
   @media (max-width: $tablet-max-width) {
     max-width: 100%;
     margin-top: -602px;
     padding-left: 88px;
     overflow: hidden;
+
+    background-image: url("../img/background-promo-tablet.svg");
+    background-position: center 66%;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -22,6 +31,9 @@
     margin-bottom: 107px;
     padding-left: 17px;
     padding-right: 17px;
+
+    background-image: url("../img/background-promo-mobile.svg");
+    background-position: 0 -70px;
   }
 }
 

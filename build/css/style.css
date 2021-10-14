@@ -235,19 +235,27 @@ img {
   margin-top: -627px;
   margin-bottom: 217px;
   padding-left: 72px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-image: url("../img/background-promo-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  background-size: auto; }
   @media (max-width: 1023px) {
     .promo {
       max-width: 100%;
       margin-top: -602px;
       padding-left: 88px;
-      overflow: hidden; } }
+      overflow: hidden;
+      background-image: url("../img/background-promo-tablet.svg");
+      background-position: center 66%; } }
   @media (max-width: 767px) {
     .promo {
       margin-top: -574px;
       margin-bottom: 107px;
       padding-left: 17px;
-      padding-right: 17px; } }
+      padding-right: 17px;
+      background-image: url("../img/background-promo-mobile.svg");
+      background-position: 0 -70px; } }
 
 .promo__text-block {
   padding-top: 65px;
