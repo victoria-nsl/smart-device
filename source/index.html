@@ -40,9 +40,23 @@
     </div>
   </header>
   <main class="page-main">
-    <h1>Компания, занимающаяся производством и монтажом печатных плат и поставкой комплектующих для светотехники</h1>
+    <h1 class="visually-hidden">Компания  Smart Device - производитель печатных плат</h1>
     <section class="promo">
-      <h2>Печатные платы</h2>
+      <div class="promo__text-block">
+        <h2>Печатные платы</h2>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="promo__link" href="#form-questions">
+          <span>Получить бесплатную консультацию</span>
+          <span>Бесплатная консультация</span>
+        </a>
+      </div>
+
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x">
+        <!--1x: 705x515px 2x: 1410x1030px-->
+        <img width="705" height="515" src="img/promo-desktop.png" srcset="img/promo-desktop@2x.png 2x" alt="Изображение 5 печатных плат">
+      </picture>
     </section>
     <section class="features">
       <h2>Преимущества</h2>
@@ -53,7 +67,7 @@
     <section class="products-services">
       <h2>Service Device предлагает следующие товары и услуги</h2>
     </section>
-    <section class="form-questions">
+    <section class="form-questions" id ="form-questions">
       <h2>Форма обратной связи</h2>
     </section>
   </main>

@@ -1,6 +1,5 @@
 .page-header {
   min-height: 878px;
-  margin-bottom: 112px;
 
   background-color: $black;
   background-image: url("../img/page-header-background-desktop.png");
@@ -13,8 +12,7 @@
   }
 
   @media (max-width: $tablet-max-width) {
-    min-height: 692px;
-    margin-bottom: 54px;
+    min-height: 686px;
 
     background-image: url("../img/page-header-background-tablet.png");
 
@@ -24,8 +22,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    min-height: 661px;
-    margin-bottom: 37px;
+    min-height: 647px;
 
     background-image: url("../img/page-header-background-mobile.png");
 
@@ -53,6 +50,7 @@
 
   @media (max-width: $mobile-max-width) {
     padding: 17px 13px 0 17px;
+    align-items: start;
   }
 }
 
@@ -105,6 +103,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 77px;
+    margin-top: 3px;
   }
 }
 
@@ -171,7 +170,7 @@
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
