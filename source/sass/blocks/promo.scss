@@ -18,19 +18,24 @@
 
   @media (max-width: $tablet-max-width) {
     max-width: 100%;
+    min-height: 602px;
     margin-top: -602px;
+    margin-bottom: 54px;
     padding-left: 88px;
+    padding-bottom: 163px;
     overflow: hidden;
 
     background-image: url("../img/background-promo-tablet.svg");
-    background-position: center 66%;
+    background-position: center -85px;
   }
 
   @media (max-width: $mobile-max-width) {
+    min-height: 574px;
     margin-top: -574px;
-    margin-bottom: 107px;
+    margin-bottom: 37px;
     padding-left: 17px;
     padding-right: 17px;
+    padding-bottom: 70px;
 
     background-image: url("../img/background-promo-mobile.svg");
     background-position: 0 -70px;
