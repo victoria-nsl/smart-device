@@ -1,0 +1,406 @@
+//Верхний раздел подвала
+.page-footer {
+  @media (max-width: $tablet-max-width) {
+    position: relative;
+  }
+}
+
+.page-footer__inner-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1492px;
+  margin: 0 auto;
+  padding: 64px 40px 55px 40px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+//Cоциальные сети
+.page-footer__social {
+  width: 15.2%;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 19px 24px 26px 24px;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid $grey-dark-border;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    padding: 46px 24px 50px 24px;
+  }
+}
+
+.page-footer__social img {
+  width: 216px;
+  height: 52px;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.page-footer__social-list {
+  @include reset-style-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 112px;
+  }
+}
+
+.page-footer__social-list li {
+  margin-right: 15px;
+}
+
+.page-footer__social-list li:last-child {
+  @media (max-width: $tablet-max-width) {
+    margin-right: 0;
+  }
+}
+
+.page-footer__social-link svg {
+  width: 27px;
+  height: 27px;
+
+  fill: $grey-ligth;
+}
+
+//Разделы сайта и Наш офис
+.page-footer__sections-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 70.2%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    padding: 38px 37px 35px 25px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+//Разделы сайта
+.page-footer__sections {
+  width: 55.7%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 243px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid $grey-dark-border;
+  }
+}
+
+.page-footer__sections h2 {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0;
+    padding: 28px 0;
+  }
+}
+
+.page-footer__sections-list {
+  @include reset-style-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 4px;
+    margin-bottom: 25px;
+  }
+}
+
+.page-footer__sections-list li {
+  width: 44.1%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 5;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 6;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 7;
+    }
+
+    &:nth-child(7) {
+      order: 4;
+    }
+  }
+}
+
+.page-footer__sections-link {
+  font-size: 15px;
+  line-height: 25px;
+  color: $black;
+  opacity: 0.5;
+}
+
+//Наш офис
+.page-footer__contacts {
+  width: 33.7%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 333px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}
+
+.page-footer__contacts h2 {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 25px;
+    margin-left: 5px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0;
+    padding: 28px 0;
+  }
+}
+
+.page-footer__contacts-list {
+  @media (max-width: $mobile-max-width) {
+    width: 93.8%;
+    padding-top: 4px;
+    margin-bottom: 25px;
+  }
+}
+
+.page-footer__contacts-list p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 25px;
+  color: $black;
+  opacity: 0.5;
+}
+
+.page-footer__contacts-link {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $black;
+  opacity: 0.5;
+}
+
+//Нижний раздел подвала
+.page-footer__inner-bottom {
+  border-top: 1px solid $grey-dark-border;
+}
+
+.page-footer__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1492px;
+  margin: 0 auto;
+  padding: 14px 40px;
+
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding: 21px 26px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 28px 25px 6px 25px;
+
+    text-align: center;
+  }
+}
+
+
+.page-footer__info-text {
+  display: flex;
+  width: 37.8%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 0;
+  }
+}
+
+.page-footer__info-text p {
+  margin: 0;
+  margin-right: 14.1%;
+
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: $black;
+}
+
+.page-footer__info-text p:first-child {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.page-footer__info-text p:last-child {
+  @media (max-width: $tablet-max-width) {
+    position: absolute;
+    left: 42.7%;
+    top: 36px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    position: absolute;
+    left: 50%;
+    top: 124px;
+    transform: translateX(-50%);
+
+    width: 233px;
+  }
+}
+
+.page-footer__info-links {
+  display: flex;
+  justify-content: space-between;
+  width: 57.6%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+  }
+}
+
+.page-footer__info-link {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: $black;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.page-footer__info-link:not(:last-child) {
+  margin-right: 10px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-right: 0;
+  }
+}
+
+//Стайлгайд
+
+.page-footer__social-link:hover svg {
+  fill: $blue;
+}
+
+.page-footer__sections-link:hover,
+.page-footer__contacts-link:hover,
+.page-footer__info-link:hover {
+  color: $blue;
+  opacity: 1;
+}
+
+.page-footer__social-link:focus,
+.page-footer__sections-link:focus,
+.page-footer__contacts-link:focus,
+.page-footer__info-link:focus {
+  outline: 2px solid $grey-dark;
+}
+
+.page-footer__social-link:active,
+.page-footer__sections-link:active,
+.page-footer__contacts-link:active,
+.page-footer__info-link:active {
+  outline: none;
+  opacity: 0.5;
+}

@@ -213,3 +213,18 @@
     width: 301px;
   }
 }
+
+//Стайлгайд
+
+.promo__link:hover {
+  border: 1px solid $white;
+}
+
+.promo__link:focus {
+  outline: 2px solid $grey-dark;
+}
+
+.promo__link:active {
+  outline: none;
+  opacity: 0.5;
+}
