@@ -149,6 +149,27 @@
   }
 }
 
+.features__item--deadlines svg {
+  width: 29px;
+  height: 35px;
+}
+
+.features__item--suppliers svg {
+  width: 35px;
+  height: 35px;
+}
+
+.features__item--privacy svg {
+  width: 36px;
+  height: 31px;
+}
+
+.features__item--cost svg {
+  width: 26px;
+  height: 26px;
+}
+
+
 //Стайлгайд
 .features__item:hover {
   background-color: $blue;

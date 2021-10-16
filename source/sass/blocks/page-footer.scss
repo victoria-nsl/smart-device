@@ -68,11 +68,11 @@
   }
 }
 
-.page-footer__social-list li {
+.page-footer__social-item {
   margin-right: 15px;
 }
 
-.page-footer__social-list li:last-child {
+.page-footer__social-item:last-child {
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
   }
@@ -160,7 +160,7 @@
   }
 }
 
-.page-footer__sections-list li {
+.page-footer__sections-item {
   width: 44.1%;
 
   @media (max-width: $tablet-max-width) {
