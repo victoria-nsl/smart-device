@@ -1,0 +1,31 @@
+.page-main__wrapper-features-about-company {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 112px;
+  padding-bottom: 3px;
+  box-sizing: border-box;
+
+  background-image: url("../img/background-about-company-features-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center -27px;
+  background-size: 1920px 1347px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding-top: 54px;
+    padding-bottom: 0;
+
+    background-image: url("../img/background-about-company-features-tablet.svg");
+    background-position: right 58%;
+    background-size: 559px 873px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 37px;
+
+    background-image: url("../img/background-about-company-features-mobile.svg");
+    background-position: right 76%;
+    background-size: 320px 873px;
+  }
+}

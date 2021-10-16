@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 110px;
+  margin-bottom: 107px;
   padding: 0 61px 0 25px;
 
   box-sizing: border-box;
@@ -135,4 +135,20 @@
   @media (max-width: $mobile-max-width) {
     margin-top: -12px;
   }
+}
+
+//Стайлгайд
+.about-company__button:hover {
+  color: $white;
+  border: 1px solid $grey-light-border;
+  background-color: $blue;
+}
+
+.about-company__button:focus {
+  outline: 2px solid $grey-dark;
+}
+
+.about-company__button:active {
+  outline: none;
+  opacity: 0.5;
 }
