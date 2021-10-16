@@ -1,4 +1,4 @@
-.accordion__content {
+.accordion__item--closed .accordion__content {
   @media (max-width: $mobile-max-width) {
     display: none;
   }
@@ -55,6 +55,18 @@
 }
 
 .accordion__item--active h2::before {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.accordion__item--nojs h2::before {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.accordion__item--nojs h2::after {
   @media (max-width: $mobile-max-width) {
     display: none;
   }

@@ -28,10 +28,12 @@ triggers.forEach((trigger, index) => {
 
     if (itemAccordionCurrent.classList.contains('accordion__item--active')) {
       itemAccordionCurrent.classList.remove('accordion__item--active');
+      itemAccordionCurrent.classList.add('accordion__item--closed');
       return;
     }
     itemsAccordion.forEach ((itemAccordion) => {
       itemAccordion.classList.remove('accordion__item--active');
+      itemAccordion.classList.add('accordion__item--closed');
       itemAccordionCurrent.classList.add('accordion__item--active');
     });
   });

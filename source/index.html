@@ -61,7 +61,7 @@
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--deadlines">
           <h3>Оперативные сроки</h3>
           <p>
             Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
@@ -70,7 +70,7 @@
             <use xlink:href="img/sprite_auto.svg#icon-features-1"></use>
           </svg>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--suppliers">
           <h3>Крупные поставщики</h3>
           <p>
             Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
@@ -79,7 +79,7 @@
             <use xlink:href="img/sprite_auto.svg#icon-features-2"></use>
           </svg>
         </li>
-        <li class="features__item features__item--min">
+        <li class="features__item features__item--privacy">
           <h3>Полная конфиденциальность</h3>
           <p>
             По желанию клиента  мы обеспечиваем полную конфеденциальность.
@@ -88,7 +88,7 @@
             <use xlink:href="img/sprite_auto.svg#icon-features-3"></use>
           </svg>
         </li>
-        <li class="features__item features__item--min">
+        <li class="features__item features__item--cost">
           <h3>Персонализация стоимости</h3>
           <p>
             Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
@@ -139,8 +139,11 @@
           </li>
         </ul>
       </section>
+      <!-- accordion__item--nojs - содержимое вкладки открыто при отключенном js, значка у вкладки нет
+      accordion__item--closed - содержимое вкладки закрыто, значок у вкладки /плюс/
+      accordion__item--active - содержимое вкладки открыто, значок у вкладки /минус/-->
       <div class="page-footer__sections-contact accordion">
-        <section class="page-footer__sections accordion__item accordion__item--nojs ">
+        <section class="page-footer__sections accordion__item accordion__item--closed accordion__item--nojs ">
           <h2>
             Разделы сайта
           </h2>
@@ -182,7 +185,7 @@
             </li>
           </ul>
         </section>
-        <section class="page-footer__contacts accordion__item accordion__item--nojs ">
+        <section class="page-footer__contacts accordion__item accordion__item--closed accordion__item--nojs ">
           <h2>
             Наш офис
           </h2>
