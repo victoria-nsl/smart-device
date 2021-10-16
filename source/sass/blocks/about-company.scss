@@ -1,0 +1,138 @@
+.about-company {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 110px;
+  padding: 0 61px 0 25px;
+
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    margin-bottom: 83px;
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 16px;
+    margin-bottom: 65px;
+  }
+}
+
+.about-company__inner {
+  position: relative;
+  padding-left: 210px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 187px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 0;
+  }
+}
+
+.about-company__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 220px;
+  height: 317px;
+
+  background-image: url("../img/about-company-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 251px;
+    height: 362px;
+
+    background-image: url("../img/about-company-tablet.png");
+    background-position: -25px -3px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.about-company__inner h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $grey-dark;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}
+
+.about-company__inner p {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey-dark;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.about-company__text-desktop {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.about-company__text-tablet {
+  display: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: inline-block;
+  }
+}
+
+
+.about-company__button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  padding: 14px 13px 13px 12px;
+  margin-top: 20px;
+  box-sizing: border-box;
+
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue;
+
+  border: 1px solid $blue;
+  border-radius: 5px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: -12px;
+  }
+}
