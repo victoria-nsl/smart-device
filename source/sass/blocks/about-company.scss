@@ -44,13 +44,22 @@
   background-image: url("../img/about-company-desktop.png");
   background-repeat: no-repeat;
   background-position: 0 5px;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-company-desktop@2x.png");
+  }
 
   @media (max-width: $tablet-max-width) {
-    width: 251px;
+    width: 244px;
     height: 362px;
 
     background-image: url("../img/about-company-tablet.png");
     background-position: -25px -3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-company-tablet@2x.png");
+    }
   }
 
   @media (max-width: $mobile-max-width) {

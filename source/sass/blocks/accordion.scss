@@ -22,7 +22,8 @@
   }
 }
 
-.accordion__item h2::after {
+.accordion__item--closed h2::after,
+.accordion__item--active h2::after {
   @media (max-width: $mobile-max-width) {
     content: "";
 
@@ -38,7 +39,7 @@
   }
 }
 
-.accordion__item h2::before {
+.accordion__item--closed h2::before {
   @media (max-width: $mobile-max-width) {
     content: "";
 
@@ -51,12 +52,6 @@
     height: 1px;
 
     background-color: $grey-sign;
-  }
-}
-
-.accordion__item--active h2::before {
-  @media (max-width: $mobile-max-width) {
-    display: none;
   }
 }
 

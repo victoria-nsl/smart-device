@@ -45,11 +45,11 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-max-width) {
-    padding: 20px 21px 0 25px;
+    padding: 20px 25px 0 25px;
   }
 
   @media (max-width: $mobile-max-width) {
-    padding: 17px 13px 0 17px;
+    padding: 17px 17px 0 17px;
     align-items: start;
   }
 }
@@ -98,7 +98,7 @@
   width: 428px;
 
   @media (max-width: $tablet-max-width) {
-    width: 86px;
+    width: 87px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -115,8 +115,7 @@
   color: $white;
 
   @media (max-width: $tablet-max-width) {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 5px;
   }
 }
 
