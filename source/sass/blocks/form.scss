@@ -11,6 +11,7 @@
 
   background: rgba($white, 0.1);
   border: none;
+  cursor: pointer;
 }
 
 .form__item--text textarea {
@@ -26,6 +27,7 @@
   background: rgba($white, 0.1);
   border: none;
   resize: none;
+  cursor: pointer;
 }
 
 .form__item--data input::placeholder,
@@ -96,4 +98,49 @@ input:checked + .form__checkbox-label::after {
 
   border: 1px solid $white;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+//Стайлгайд
+input:hover + .form__checkbox-label::before {
+  border: 1px solid $black;
+}
+
+input:focus + .form__checkbox-label::before {
+  outline: 2px solid $grey-dark;
+}
+
+input:active + .form__checkbox-label::before {
+  outline: none;
+  opacity: 0.2;
+}
+
+.form__item input:hover,
+.form__item--text textarea:hover {
+  background-color: rgba($white, 0.3);
+}
+
+.form__item input:focus,
+.form__item--text textarea:focus {
+  outline: 2px solid $grey-dark;
+}
+
+.form__item input:active,
+.form__item--text textarea:active {
+  outline: none;
+  background-color: rgba($white, 0.2);
+}
+
+.form__button:hover {
+  border: 1px solid $black;
+}
+
+
+.form__button:focus {
+  outline: 2px solid $grey-dark;
+}
+
+.form__button:active {
+  outline: none;
+  opacity: 0.5;
 }

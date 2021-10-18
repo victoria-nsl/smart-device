@@ -6,6 +6,8 @@
   right: 0;
   z-index: 30;
 
+  display: none;
+
   background-color: rgba($black, 0.2);
 }
 
@@ -16,10 +18,13 @@
   transform: translate(-50%, -50%);
   z-index: 30;
 
+  display: none;
+
   width: 490px;
+  margin: 0 auto;
   padding: 30px 40px 36px 40px;
   box-sizing: border-box;
-  margin: 0 auto;
+
   background-color: $blue;
 }
 
@@ -80,6 +85,7 @@
 
   width: 17px;
   height: 17px;
+
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -109,4 +115,27 @@
   height: 1px;
 
   background-color: $white;
+}
+
+//Стайлгайд
+.modal__close:hover::after {
+  background-color: $black;
+}
+
+.modal__close:hover::before {
+  background-color: $black;
+}
+
+.modal__close:focus {
+  outline: 2px solid $grey-dark;
+}
+
+.modal__close:active::after {
+  outline: none;
+  opacity: 0.5;
+}
+
+.modal__close:active::before {
+  outline: none;
+  opacity: 0.5;
 }

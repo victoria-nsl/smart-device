@@ -1220,7 +1220,8 @@ img {
   line-height: 22px;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .form__item--text textarea {
   padding-top: 14px;
@@ -1232,7 +1233,8 @@ img {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  resize: none; }
+  resize: none;
+  cursor: pointer; }
 
 .form__item--data input::placeholder,
 .form__item--text textarea::placeholder {
@@ -1285,7 +1287,41 @@ input:checked + .form__checkbox-label::after {
   color: #ffffff;
   background-color: #00b2ff;
   border: 1px solid #ffffff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
+
+input:hover + .form__checkbox-label::before {
+  border: 1px solid #1b2d37; }
+
+input:focus + .form__checkbox-label::before {
+  outline: 2px solid #666666; }
+
+input:active + .form__checkbox-label::before {
+  outline: none;
+  opacity: 0.2; }
+
+.form__item input:hover,
+.form__item--text textarea:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.form__item input:focus,
+.form__item--text textarea:focus {
+  outline: 2px solid #666666; }
+
+.form__item input:active,
+.form__item--text textarea:active {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.form__button:hover {
+  border: 1px solid #1b2d37; }
+
+.form__button:focus {
+  outline: 2px solid #666666; }
+
+.form__button:active {
+  outline: none;
+  opacity: 0.5; }
 
 .modal {
   position: fixed;
@@ -1294,6 +1330,7 @@ input:checked + .form__checkbox-label::after {
   bottom: 0;
   right: 0;
   z-index: 30;
+  display: none;
   background-color: rgba(27, 45, 55, 0.2); }
 
 .modal__inner {
@@ -1302,10 +1339,11 @@ input:checked + .form__checkbox-label::after {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
+  display: none;
   width: 490px;
+  margin: 0 auto;
   padding: 30px 40px 36px 40px;
   box-sizing: border-box;
-  margin: 0 auto;
   background-color: #00b2ff; }
 
 .modal__show {
@@ -1376,3 +1414,20 @@ input:checked + .form__checkbox-label::after {
   width: 23px;
   height: 1px;
   background-color: #ffffff; }
+
+.modal__close:hover::after {
+  background-color: #1b2d37; }
+
+.modal__close:hover::before {
+  background-color: #1b2d37; }
+
+.modal__close:focus {
+  outline: 2px solid #666666; }
+
+.modal__close:active::after {
+  outline: none;
+  opacity: 0.5; }
+
+.modal__close:active::before {
+  outline: none;
+  opacity: 0.5; }

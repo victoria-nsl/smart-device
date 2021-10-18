@@ -48,3 +48,53 @@ triggers.forEach((trigger, index) => {
     showContent(itemAccordionCurrent);
   });
 });
+
+/*================ОТКРЫТИЕ/ЗАКРЫТИЕ МОДАЛЬНОГО ОКНА==========================================*/
+
+const body = document.querySelector('.page-body');
+const buttonOrder = document.querySelector('.page-header__button');
+const overlayPopup = document.querySelector('.modal');
+const popupOrderCall = document.querySelector('.modal__inner');
+const buttonClose = document.querySelector('.modal__close');
+
+const openPopup = () => {
+  popupOrderCall.classList.add('modal__show');
+  overlayPopup.classList.add('modal__show');
+  body.classList.add('page-body--no-scroll');
+};
+
+const closePopup = () => {
+  if (overlayPopup.classList.contains('modal__show')) {
+    popupOrderCall.classList.remove('modal__show');
+    overlayPopup.classList.remove('modal__show');
+    body.classList.remove('page-body--no-scroll');
+  }
+};
+
+const onDocumentEscKeydown = (evt) => {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    closePopup();
+    document.removeEventListener('keydown', onDocumentEscKeydown);
+  }
+};
+
+const onClickOverlayPopup = (evt) => {
+  if (evt.target.matches('section')) {
+    closePopup();
+  }
+};
+
+const onClickButtonClose = () => {
+  closePopup();
+};
+
+const onClickButtonOrder = (evt) => {
+  evt.preventDefault();
+  openPopup();
+  document.addEventListener('keydown', onDocumentEscKeydown);
+};
+
+overlayPopup.addEventListener('click', onClickOverlayPopup);
+buttonOrder.addEventListener('click', onClickButtonOrder);
+buttonClose.addEventListener('click', onClickButtonClose);
