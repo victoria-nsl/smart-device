@@ -1,24 +1,15 @@
 .form__item--data input {
-  padding-top: 14px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  box-sizing: border-box;
-
   font: inherit;
   font-size: 16px;
   line-height: 22px;
   color: $white;
 
-  background: rgba($white, 0.1);
+  background-color: rgba($white, 0.1);
   border: none;
   cursor: pointer;
 }
 
 .form__item--text textarea {
-  padding-top: 14px;
-  padding-left: 24px;
-  box-sizing: border-box;
-
   font: inherit;
   font-size: 16px;
   line-height: 22px;
@@ -49,6 +40,10 @@
   cursor: pointer;
 }
 
+.form__checkbox-label--questions {
+  margin-left: 40px;
+}
+
 
 input + .form__checkbox-label::before {
   position: absolute;
@@ -61,6 +56,10 @@ input + .form__checkbox-label::before {
   box-sizing: border-box;
 
   border: 1px solid $white;
+}
+
+input + .form__checkbox-label--questions::before {
+  left: -33px;
 }
 
 input:checked + .form__checkbox-label::after {
@@ -76,6 +75,10 @@ input:checked + .form__checkbox-label::after {
 
   background-image: url("../img/back-icon-check.svg");
   background-repeat: no-repeat;
+}
+
+input:checked + .form__checkbox-label--questions::after {
+  left: -30px;
 }
 
 .form__button {

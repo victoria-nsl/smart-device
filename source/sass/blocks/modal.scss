@@ -61,6 +61,10 @@
 
 .modal__item--data input {
   width: 100%;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  box-sizing: border-box;
 }
 
 .modal__item--text {
@@ -71,6 +75,9 @@
 .modal__item--text textarea {
   width: 100%;
   min-height: 104px;
+  padding-top: 14px;
+  padding-left: 24px;
+  box-sizing: border-box;
 }
 
 .modal__button {
