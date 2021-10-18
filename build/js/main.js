@@ -14,6 +14,7 @@ anchorLink.addEventListener('click', (evt) => {
 });
 
 /*================АККОРДЕОН==========================================*/
+
 const triggers = document.querySelectorAll('.accordion__item h2');
 const itemsAccordion = document.querySelectorAll('.accordion__item');
 

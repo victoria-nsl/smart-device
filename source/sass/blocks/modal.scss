@@ -1,0 +1,112 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+
+  background-color: rgba($black, 0.2);
+}
+
+.modal__inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  width: 490px;
+  padding: 30px 40px 36px 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: $blue;
+}
+
+.modal__show {
+  display: block;
+}
+
+.modal__inner h2 {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: $white;
+}
+
+.modal__inner p {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+
+.modal__item--data {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.modal__item--data input {
+  width: 100%;
+}
+
+.modal__item--text {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.modal__item--text textarea {
+  width: 100%;
+  min-height: 104px;
+}
+
+.modal__button {
+  width: 100%;
+  margin-bottom: 34px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.modal__close::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  transform: rotate(45deg);
+
+  width: 23px;
+  height: 1px;
+
+  background-color: $white;
+}
+
+.modal__close::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  transform: rotate(-45deg);
+
+  width: 23px;
+  height: 1px;
+
+  background-color: $white;
+}

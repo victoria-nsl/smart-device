@@ -295,6 +295,31 @@
       </section>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__inner">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем <br> вас бесплатно в удобное время</p>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+        <div class="modal__item modal__item--data form__item form__item--data">
+          <label class="visually-hidden" for="customer-name">Имя</label>
+          <input id="customer-name" type="text" name="customer-name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="">
+        </div>
+        <div class="modal__item modal__item--data form__item form__item--data">
+          <label class="visually-hidden" for="tel">Телефон</label>
+          <input id="tel" type="tel" name="tel" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" required="">
+        </div>
+        <div class="modal__item modal__item--text form__item form__item--text">
+          <label class="visually-hidden" for="question">Текст вопроса</label>     <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <button class="modal__button form__button" type="submit"> Отправить </button>
+        <div class="modal__item modal__item--checkbox form__item form__item--checkbox">
+          <input class="visually-hidden" id="data" type="checkbox" name="data" checked="">
+          <label class="form__checkbox-label" for="data">Я согласен на обработку  персональных данных</label>
+        </div>
+      </form>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </div>
+  </section>
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
