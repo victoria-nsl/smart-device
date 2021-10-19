@@ -14,6 +14,8 @@
   const popupOrderCall = overlayPopup.querySelector('.modal__inner');
   const buttonClose = overlayPopup.querySelector('.modal__close');
   const inputNameModal = overlayPopup.querySelector('#customer-name');
+  const inputTelModal = overlayPopup.querySelector('#tel');
+  const inputMessageModal = overlayPopup.querySelector('#question');
 
   const forms =document.querySelectorAll('.form');
   const userInputsName =document.querySelectorAll('.form__item--name input');
@@ -22,6 +24,10 @@
   const userInputsCheckbox =document.querySelectorAll('.form__item--checkbox input');
   const buttonsForm =document.querySelectorAll('.form__button');
 
+  const formFormQuestions =document.querySelector('.form-questions');
+  const inputNameFormQuestions = formFormQuestions.querySelector('#name');
+  const inputTelFormQuestions = formFormQuestions.querySelector('#phone');
+  const inputMessageFormQuestions = formFormQuestions.querySelector('#your-question');
 
   /*================ПЛАВНЫЙ СКРОЛЛ=============================*/
   if (anchorLink) {
@@ -71,52 +77,6 @@
     });
   }
 
-  /*=======ОТКРЫТИЕ/ЗАКРЫТИЕ МОДАЛЬНОГО ОКНА==========================*/
-  if (overlayPopup) {
-    const openPopup = () => {
-      popupOrderCall.classList.add('modal__show');
-      overlayPopup.classList.add('modal__show');
-      body.classList.add('page-body--no-scroll');
-      inputNameModal.focus();
-    };
-
-    const closePopup = () => {
-      if (overlayPopup.classList.contains('modal__show')) {
-        popupOrderCall.classList.remove('modal__show');
-        overlayPopup.classList.remove('modal__show');
-        body.classList.remove('page-body--no-scroll');
-      }
-    };
-
-    const onDocumentEscKeydown = (evt) => {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        closePopup();
-        document.removeEventListener('keydown', onDocumentEscKeydown);
-      }
-    };
-
-    const onClickOverlayPopup = (evt) => {
-      if (evt.target.matches('section')) {
-        closePopup();
-      }
-    };
-
-    const onClickButtonClose = () => {
-      closePopup();
-    };
-
-    const onClickButtonOrder = (evt) => {
-      evt.preventDefault();
-      openPopup();
-      document.addEventListener('keydown', onDocumentEscKeydown);
-    };
-
-    overlayPopup.addEventListener('click', onClickOverlayPopup);
-    buttonOrder.addEventListener('click', onClickButtonOrder);
-    buttonClose.addEventListener('click', onClickButtonClose);
-  }
-
   /*======================МАСКА ДЛЯ ТЕЛЕФОНА=======================*/
   if (userInputsTel) {
     const checkMask = (evt) => {
@@ -163,31 +123,25 @@
     let storageName = '';
     let storageMessage = '';
 
-    try {
-      storageTel = localStorage.getItem('tel');
-      storageName = localStorage.getItem('name');
-      storageMessage = localStorage.getItem('message');
-    } catch (err) {
-      isStorageSupport = false;
-    }
+    const setItemLocalStorage = (nameUser, phone, text) => {
 
-    userInputsName.forEach((userInputName) => {
-      if (storageName) {
-        userInputName.value = storageName || '' ;
+      try {
+        storageTel = localStorage.getItem('tel');
+        storageName = localStorage.getItem('name');
+        storageMessage = localStorage.getItem('message');
+      } catch (err) {
+        isStorageSupport = false;
       }
-    });
 
-    userInputsTel.forEach((userInputTel) => {
-      if (storageTel) {
-        userInputTel.value = storageTel || '';
+      if (storageMessage || storageTel || storageName) {
+        nameUser.value = storageName || '' ;
+        phone.value = storageTel || '';
+        text.value = storageMessage || '' ;
       }
-    });
+    };
 
-    userInputsMessage.forEach((userInputMessage) => {
-      if (storageMessage) {
-        userInputMessage.value = storageMessage || '' ;
-      }
-    });
+    setItemLocalStorage (inputNameFormQuestions, inputTelFormQuestions,inputMessageFormQuestions);
+
 
     /*================ВАЛИДАЦИЯ==========================================*/
     const checkInput= (inputText, message, regularExpression) => {
@@ -248,5 +202,53 @@
         }
       });
     });
+
+    /*=======ОТКРЫТИЕ/ЗАКРЫТИЕ МОДАЛЬНОГО ОКНА==========================*/
+
+    const openPopup = () => {
+      popupOrderCall.classList.add('modal__show');
+      overlayPopup.classList.add('modal__show');
+      body.classList.add('page-body--no-scroll');
+      inputNameModal.focus();
+
+      setItemLocalStorage(inputNameModal, inputTelModal,inputMessageModal);
+    };
+
+    const closePopup = () => {
+      if (overlayPopup.classList.contains('modal__show')) {
+        popupOrderCall.classList.remove('modal__show');
+        overlayPopup.classList.remove('modal__show');
+        body.classList.remove('page-body--no-scroll');
+      }
+      setItemLocalStorage (inputNameFormQuestions, inputTelFormQuestions,inputMessageFormQuestions);
+    };
+
+    const onDocumentEscKeydown = (evt) => {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        closePopup();
+        document.removeEventListener('keydown', onDocumentEscKeydown);
+      }
+    };
+
+    const onClickOverlayPopup = (evt) => {
+      if (evt.target.matches('section')) {
+        closePopup();
+      }
+    };
+
+    const onClickButtonClose = () => {
+      closePopup();
+    };
+
+    const onClickButtonOrder = (evt) => {
+      evt.preventDefault();
+      openPopup();
+      document.addEventListener('keydown', onDocumentEscKeydown);
+    };
+
+    overlayPopup.addEventListener('click', onClickOverlayPopup);
+    buttonOrder.addEventListener('click', onClickButtonOrder);
+    buttonClose.addEventListener('click', onClickButtonClose);
   }
 })();
