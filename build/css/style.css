@@ -941,6 +941,9 @@ input:checked + .form__checkbox-label--questions::after {
   border-radius: 5px;
   cursor: pointer; }
 
+.form__error {
+  box-shadow: 0 0 10px #ff0000; }
+
 input:hover + .form__checkbox-label::before {
   border: 1px solid #1b2d37; }
 

@@ -187,13 +187,13 @@
           <h3>Остались вопросы? Задайте их нам!</h3>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="form-questions__form form" action="https://echo.htmlacademy.ru/"  method="post" target="_blank">
-            <div class="form-questions__item form-questions__item--data form__item form__item--data">
+            <div class="form-questions__item form-questions__item--data form__item form__item--data form__item--name">
               <label class="visually-hidden" for="name">Имя</label>
               <input id="name" type="text" name="name" placeholder="Имя" pattern ="^[A-Za-zА-Яа-яЁё\s]+$" required>
             </div>
-            <div class="form-questions__item form-questions__item--data form__item form__item--data">
+            <div class="form-questions__item form-questions__item--data form__item form__item--data form__item--tel">
               <label class="visually-hidden" for="phone">Телефон</label>
-              <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" required>
+              <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" minlength="18" required>
             </div>
             <div class="form-questions__item form-questions__item--text form__item form__item--text">
               <label  class="visually-hidden" for="your-question">Текст вопроса</label>     <textarea id="your-question" name="your-question" placeholder="Ваш вопрос"></textarea>
@@ -332,14 +332,14 @@
     <div class="modal__inner">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем <br> вас бесплатно в удобное время</p>
-      <form class="modal__form form" action="https://echo.htmlacademy.ru/"  method="post" target="_blank">
-        <div class="modal__item modal__item--data form__item form__item--data">
+      <form class="modal__form form" action="https://echo.htmlacademy.ru/"  method="post">
+        <div class="modal__item modal__item--data form__item form__item--data form__item--name">
           <label class="visually-hidden" for="customer-name">Имя</label>
           <input id="customer-name" type="text" name="customer-name" placeholder="Имя" pattern ="^[A-Za-zА-Яа-яЁё\s]+$" required>
         </div>
-        <div class="modal__item modal__item--data form__item form__item--data">
+        <div class="modal__item modal__item--data form__item form__item--data form__item--tel">
           <label class="visually-hidden" for="tel">Телефон</label>
-          <input id="tel" type="tel" name="tel" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" required>
+          <input id="tel" type="tel" name="tel" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" minlength="18" required>
         </div>
         <div class="modal__item modal__item--text form__item form__item--text">
           <label  class="visually-hidden" for="question">Текст вопроса</label>     <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>

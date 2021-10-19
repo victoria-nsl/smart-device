@@ -104,6 +104,10 @@ input:checked + .form__checkbox-label--questions::after {
   cursor: pointer;
 }
 
+.form__error {
+  box-shadow: 0 0 10px $red;
+}
+
 //Стайлгайд
 input:hover + .form__checkbox-label::before {
   border: 1px solid $black;
