@@ -276,6 +276,7 @@
 .page-footer__info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1492px;
   margin: 0 auto;
@@ -300,7 +301,8 @@
 
 .page-footer__info-text {
   display: flex;
-  width: 37.8%;
+  flex-wrap: wrap;
+  width: 32.4%;
 
   @media (max-width: $tablet-max-width) {
     width: 0;
@@ -308,8 +310,8 @@
 }
 
 .page-footer__info-text p {
+  width: auto;
   margin: 0;
-  margin-right: 14.1%;
 
   font-size: 13px;
   line-height: 24px;
@@ -317,6 +319,10 @@
   text-transform: uppercase;
   opacity: 0.5;
   color: $black;
+}
+
+.page-footer__info-text p:not(:last-child) {
+  margin-right: 16.3%;
 }
 
 .page-footer__info-text p:first-child {
@@ -345,6 +351,7 @@
 .page-footer__info-links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 57.6%;
 
   @media (max-width: $tablet-max-width) {

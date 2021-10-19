@@ -124,7 +124,6 @@
     let storageMessage = '';
 
     const setItemLocalStorage = (nameUser, phone, text) => {
-
       try {
         storageTel = localStorage.getItem('tel');
         storageName = localStorage.getItem('name');
