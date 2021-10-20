@@ -867,6 +867,12 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   cursor: pointer; }
+  .form__item--data input::placeholder {
+    color: #ffffff;
+    opacity: 0.7; }
+  .form__item--data input::-moz-placeholder {
+    color: #ffffff;
+    opacity: 0.7; }
 
 .form__item--text textarea {
   font: inherit;
@@ -877,10 +883,12 @@ img {
   border: none;
   resize: none;
   cursor: pointer; }
-
-.form__item--data input::placeholder,
-.form__item--text textarea::placeholder {
-  color: white; }
+  .form__item--text textarea::placeholder {
+    color: #ffffff;
+    opacity: 0.7; }
+  .form__item--text textarea::-moz-placeholder {
+    color: #ffffff;
+    opacity: 0.7; }
 
 .form__checkbox-label {
   position: relative;
@@ -1405,7 +1413,6 @@ input:active + .form__checkbox-label::before {
 
 .page-footer__info-text {
   display: flex;
-  flex-wrap: wrap;
   width: 32.4%; }
   @media (max-width: 1023px) {
     .page-footer__info-text {

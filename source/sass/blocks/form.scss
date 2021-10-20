@@ -7,6 +7,16 @@
   background-color: rgba($white, 0.1);
   border: none;
   cursor: pointer;
+
+  &::placeholder {
+    color: $white;
+    opacity: 0.7;
+  }
+
+  &::-moz-placeholder {
+    color: $white;
+    opacity: 0.7;
+  }
 }
 
 .form__item--text textarea {
@@ -19,11 +29,16 @@
   border: none;
   resize: none;
   cursor: pointer;
-}
 
-.form__item--data input::placeholder,
-.form__item--text textarea::placeholder {
-  color: rgba($white, 1);
+  &::placeholder {
+    color: $white;
+    opacity: 0.7;
+  }
+
+  &::-moz-placeholder {
+    color: $white;
+    opacity: 0.7;
+  }
 }
 
 .form__checkbox-label {
