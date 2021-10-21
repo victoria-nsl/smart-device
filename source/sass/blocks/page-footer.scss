@@ -296,6 +296,7 @@
 .page-footer__info-text {
   display: flex;
   width: 32.4%;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -352,6 +353,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   width: 57.6%;
 
   @media (max-width: $tablet-max-width) {
