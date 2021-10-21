@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page-body">
+<body>
   <header class="page-header">
     <div class="page-header__inner">
       <a class="page-header__logo">
@@ -126,7 +126,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/products-services-1-tablet.webp 1x, img/products-services-1-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/products-services-1-desktop.webp 1x, img/products-services-1-desktop@2x.webp 2x">
                 <!--1x: 370x620px  2x: 740x1240px-->
-                <img width="370" height="620" src="img/products-services-1-desktop.png" srcset="img/products-services-1-desktop@2x.png 2x"  alt= "Фотография производства печатной  платы">
+                <img width="370" height="620" src="img/products-services-1-desktop.png" srcset="img/products-services-1-desktop@2x.png 2x"  alt="Фотография производства печатной  платы">
               </picture>
               <div class="products-services-icon">
                 <svg role ="img" width="6" height="9">
@@ -143,7 +143,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/products-services-2-tablet.webp 1x, img/products-services-2-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/products-services-2-desktop.webp 1x, img/products-services-2-desktop@2x.webp 2x">
                 <!--1x: 370x620px  2x: 740x1240px-->
-                <img width="370" height="620" src="img/products-services-2-desktop.png" srcset="img/products-services-2-desktop@2x.png 2x"  alt= "Фотография пайки печатной платы">
+                <img width="370" height="620" src="img/products-services-2-desktop.png" srcset="img/products-services-2-desktop@2x.png 2x"  alt="Фотография пайки печатной платы">
               </picture>
               <div class="products-services-icon">
                 <svg role ="img" width="8" height="4">
@@ -160,7 +160,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/products-services-3-tablet.webp 1x, img/products-services-3-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/products-services-3-desktop.webp 1x, img/products-services-3-desktop@2x.webp 2x">
                 <!--1x: 370x620px  2x: 740x1240px-->
-                <img width="370" height="620" src="img/products-services-3-desktop.png" srcset="img/products-services-3-desktop@2x.png 2x"  alt= "Фотография светодиодной ленты">
+                <img width="370" height="620" src="img/products-services-3-desktop.png" srcset="img/products-services-3-desktop@2x.png 2x"  alt="Фотография светодиодной ленты">
               </picture>
               <div class="products-services-icon">
                 <svg role ="img" width="8" height="4">
@@ -180,7 +180,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/form-questions-airplane.webp 1x, img/form-questions-airplane@2x.webp 2x">
             <!--1x: 511x288px  2x: 1022x576px-->
-            <img width="511" height="288" src="img/form-questions-airplane.png" srcset="img/form-questions-airplane@2x.png 2x"  alt= "Изображение бумажного самолетика">
+            <img width="511" height="288" src="img/form-questions-airplane.png" srcset="img/form-questions-airplane@2x.png 2x"  alt="Изображение бумажного самолетика">
           </picture>
         </div>
         <div class="form-questions__form-wrapper">
@@ -196,9 +196,12 @@
               <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" minlength="18" required>
             </div>
             <div class="form-questions__item form-questions__item--text form__item form__item--text">
-              <label  class="visually-hidden" for="your-question">Текст вопроса</label>     <textarea id="your-question" name="your-question" placeholder="Ваш вопрос"></textarea>
+              <label  class="visually-hidden" for="your-question">Текст вопроса</label>
+              <textarea id="your-question" name="your-question" placeholder="Ваш вопрос"></textarea>
             </div>
-            <button class="form-questions__button form__button" type="submit"> Задать вопрос </button>
+            <div class="form-questions__item form-questions__item--button">
+              <button class="form-questions__button form__button" type="submit"> Задать вопрос </button>
+            </div>
             <div class="form-questions__item form-questions__item--checkbox form__item form__item--checkbox">
               <input class="visually-hidden" id="personal-data" type="checkbox" name="data" checked required>
               <label class="form__checkbox-label form__checkbox-label--questions" for="personal-data">Я согласен на обработку  персональных данных</label>
@@ -293,15 +296,21 @@
             <p>
               г. Мытищи, Олимпийский проспект, д.10
             </p>
-            <a class="page-footer__contacts-link" href="tel:+74955894050" aria-label="Позвонить по телефону компании Smart Device">
-              +7 (495) 589-40-50
-            </a>
-            <a class="page-footer__contacts-link" href="tel:+79250038787" aria-label="Позвонить по телефону компании Smart Device">
-              +7 (925) 003-87-67
-            </a>
-            <a class="page-footer__contacts-link" href="tel:+792692608079" aria-label="Позвонить по телефону компании Smart Device">
-              +7 (926) 926-080-79
-            </a>
+            <div class="page-footer__contacts-item-link">
+              <a class="page-footer__contacts-link" href="tel:+74955894050" aria-label="Позвонить по телефону компании Smart Device">
+                +7 (495) 589-40-50
+              </a>
+            </div>
+            <div class="page-footer__contacts-item-link">
+              <a class="page-footer__contacts-link" href="tel:+79250038787" aria-label="Позвонить по телефону компании Smart Device">
+                +7 (925) 003-87-67
+              </a>
+            </div>
+            <div class="page-footer__contacts-item-link">
+              <a class="page-footer__contacts-link" href="tel:+792692608079" aria-label="Позвонить по телефону компании Smart Device">
+                +7 (926) 926-080-79
+              </a>
+            </div>
           </div>
         </section>
       </div>
@@ -342,12 +351,13 @@
           <input id="tel" type="tel" name="tel" placeholder="Телефон" pattern="^\+?[\d()\- ]+$" minlength="18" required>
         </div>
         <div class="modal__item modal__item--text form__item form__item--text">
-          <label  class="visually-hidden" for="question">Текст вопроса</label>     <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>
+          <label  class="visually-hidden" for="question">Текст вопроса</label>
+          <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>
         </div>
         <button class="modal__button form__button" type="submit"> Отправить </button>
         <div class="modal__item modal__item--checkbox form__item form__item--checkbox">
           <input class="visually-hidden" id="data" type="checkbox" name="data" checked required>
-          <label class="form__checkbox-label" for="data">Я согласен на обработку  персональных данных</label>
+          <label class="form__checkbox-label form__checkbox-label--modal" for="data">Я согласен на обработку  персональных данных</label>
         </div>
       </form>
       <button class="modal__close" type="button" aria-label="Закрыть"></button>

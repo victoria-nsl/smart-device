@@ -5,7 +5,7 @@
   background-color: $blue;
   background-image: url("../img/background-form-questions.svg");
   background-repeat: no-repeat;
-  background-position: 100px 65%;
+  background-position: 102px 64%;
   background-size: 1890px 764px;
 
   @media (max-width: $tablet-max-width) {
@@ -71,7 +71,7 @@
 
 .form-questions__form-wrapper h3 {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   margin-left: -5px;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -82,7 +82,7 @@
   color: $white;
 
   @media (max-width: $tablet-max-width) {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 
     font-size: 32px;
     line-height: 140.62%;
@@ -122,12 +122,16 @@
 
 .form-questions__item--data,
 .form-questions__item--checkbox,
-.form-questions__button {
+.form-questions__item--button {
   width: 47.3%;
 
   @media (max-width: $mobile-max-width) {
     width: 100%;
   }
+}
+
+.form-questions__button {
+  width: 100%;
 }
 
 .form-questions__item--data {

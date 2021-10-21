@@ -8,7 +8,7 @@
   const itemsAccordion = document.querySelectorAll('.accordion__item');
   const triggers = document.querySelectorAll('.accordion__item h2');
 
-  const body = document.querySelector('.page-body');
+  const body = document.body;
   const buttonOrder = document.querySelector('.page-header__button');
   const overlayPopup = document.querySelector('.modal');
   const popupOrderCall = overlayPopup.querySelector('.modal__inner');
@@ -207,7 +207,7 @@
     const openPopup = () => {
       popupOrderCall.classList.add('modal__show');
       overlayPopup.classList.add('modal__show');
-      body.classList.add('page-body--no-scroll');
+      body.classList.add('page-no-scroll');
       inputNameModal.focus();
 
       setItemLocalStorage(inputNameModal, inputTelModal,inputMessageModal);
@@ -217,7 +217,7 @@
       if (overlayPopup.classList.contains('modal__show')) {
         popupOrderCall.classList.remove('modal__show');
         overlayPopup.classList.remove('modal__show');
-        body.classList.remove('page-body--no-scroll');
+        body.classList.remove('page-no-scroll');
       }
       setItemLocalStorage (inputNameFormQuestions, inputTelFormQuestions,inputMessageFormQuestions);
     };

@@ -44,8 +44,8 @@
 .form__checkbox-label {
   position: relative;
 
-  display: block;
-  margin-left: 49px;
+  display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 16px;
@@ -56,9 +56,18 @@
 }
 
 .form__checkbox-label--questions {
+  width: 74.4%;
   margin-left: 40px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 205px;
+  }
 }
 
+.form__checkbox-label--modal {
+  width: 315px;
+  margin-left: 49px;
+}
 
 input + .form__checkbox-label::before {
   position: absolute;
