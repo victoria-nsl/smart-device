@@ -57,7 +57,7 @@
 .page-header__logo {
   width: 202px;
   height: 52px;
-  cursor: none;
+  cursor: default;
 
   @media (max-width: $mobile-max-width) {
     width: 38px;
