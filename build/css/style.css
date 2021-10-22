@@ -206,9 +206,6 @@ img {
     .page-header__button {
       display: none; } }
 
-.page-header__button--nojs {
-  display: none; }
-
 .page-header__button:hover {
   color: #00b2ff;
   border: 1px solid #00b2ff; }

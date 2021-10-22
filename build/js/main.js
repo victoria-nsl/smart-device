@@ -203,8 +203,6 @@
     });
 
     /*=======ОТКРЫТИЕ/ЗАКРЫТИЕ МОДАЛЬНОГО ОКНА==========================*/
-    buttonOrder.classList.remove('page-header__button--nojs');
-
     const openPopup = () => {
       popupOrderCall.classList.add('modal__show');
       overlayPopup.classList.add('modal__show');
