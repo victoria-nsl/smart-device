@@ -6,6 +6,7 @@
 
   background-color: rgba($white, 0.1);
   border: none;
+  border-radius: 0;
   cursor: pointer;
 
   &::placeholder {
@@ -27,6 +28,7 @@
 
   background: rgba($white, 0.1);
   border: none;
+  border-radius: 0;
   resize: none;
   cursor: pointer;
 
@@ -57,7 +59,8 @@
 
 .form__checkbox-label--questions {
   width: 74.4%;
-  margin-left: 40px;
+  margin-left: 7px;
+  padding-left: 33px;
 
   @media (max-width: $tablet-max-width) {
     width: 205px;
@@ -66,13 +69,13 @@
 
 .form__checkbox-label--modal {
   width: 315px;
-  margin-left: 49px;
+  padding-left: 49px;
 }
 
 input + .form__checkbox-label::before {
   position: absolute;
   top: 0;
-  left: -49px;
+  left: 0;
   content: "";
 
   width: 16px;
@@ -83,13 +86,13 @@ input + .form__checkbox-label::before {
 }
 
 input + .form__checkbox-label--questions::before {
-  left: -33px;
+  left: 0;
 }
 
 input:checked + .form__checkbox-label::after {
   position: absolute;
   top: 4px;
-  left: -45px;
+  left: 3px;
   content: "";
 
 
@@ -102,7 +105,7 @@ input:checked + .form__checkbox-label::after {
 }
 
 input:checked + .form__checkbox-label--questions::after {
-  left: -30px;
+  left: 3px;
 }
 
 .form__button {

@@ -7,17 +7,19 @@
   z-index: 30;
 
   display: none;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   background-color: rgba($black, 0.5);
 }
 
 .modal__inner {
-  position: fixed;
+  position: absolute;
   top: 135px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 30;
-
   display: none;
 
   width: 490px;
