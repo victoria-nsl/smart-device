@@ -148,7 +148,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 407px;
-  padding: 17px 28px 17px 28px;
+  padding: 16px 28px 16px 28px;
   margin-left: 6.5%;
   box-sizing: border-box;
 
@@ -164,8 +164,10 @@
   color: $white;
 
   background-color: $blue;
-  border: 1px solid $blue;
+  border: 2px solid $blue;
   border-radius: 5px;
+
+  transition-duration: 0.5s;
 
   @media (max-width: $tablet-max-width) {
     width: 379px;
@@ -225,7 +227,7 @@
 //Стайлгайд
 
 .promo__link:hover {
-  border: 1px solid $white;
+  border: 2px solid $white;
 }
 
 .promo__link:focus {

@@ -97,6 +97,8 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+
+  transition-duration: 0.5s;
 }
 
 .products-services__link h3 {
@@ -160,6 +162,8 @@
   height: 63px;
 
   background-color: $blue;
+
+  transition-duration: 0.5s;
 }
 
 .products-services-icon svg {
@@ -168,6 +172,8 @@
 
   stroke: $white;
   fill: none;
+
+  transition-duration: 0.5s;
 }
 
 //Стайлгайд

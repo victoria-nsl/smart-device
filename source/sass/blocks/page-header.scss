@@ -124,6 +124,8 @@
   font-size: 16px;
   line-height: 18px;
 
+  transition-duration: 0.5s;
+
   @media (max-width: $tablet-max-width) {
     display: none;
   }
@@ -141,6 +143,8 @@
   fill: $blue;
   width: 19px;
   height: 14px;
+
+  transition-duration: 0.5s;
 
   @media (max-width: $tablet-max-width) {
     width: 25px;
@@ -179,6 +183,8 @@
 
   border: 1px solid $white;
   border-radius: 5px;
+
+  transition-duration: 0.5s;
 
   @media (max-width: $tablet-max-width) {
     display: none;

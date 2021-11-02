@@ -83,6 +83,7 @@
   height: 27px;
 
   fill: $grey-ligth;
+  transition-duration: 0.5s;
 }
 
 //Разделы сайта и Наш офис
@@ -164,6 +165,8 @@
   line-height: 25px;
   color: $black;
   opacity: 0.5;
+
+  transition-duration: 0.5s;
 }
 
 //Наш офис
@@ -227,6 +230,7 @@
 
   color: $black;
   opacity: 0.5;
+  transition-duration: 0.5s;
 }
 
 //Нижний раздел подвала
@@ -339,6 +343,8 @@
   text-transform: uppercase;
   opacity: 0.5;
   color: $black;
+
+  transition-duration: 0.5s;
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 21px;

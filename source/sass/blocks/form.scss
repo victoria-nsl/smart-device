@@ -8,6 +8,7 @@
   border: none;
   border-radius: 0;
   cursor: pointer;
+  transition-duration: 0.5s;
 
   &::placeholder {
     color: $white;
@@ -31,6 +32,7 @@
   border-radius: 0;
   resize: none;
   cursor: pointer;
+  transition-duration: 0.5s;
 
   &::placeholder {
     color: $white;
@@ -83,6 +85,7 @@ input + .form__checkbox-label::before {
   box-sizing: border-box;
 
   border: 1px solid $white;
+  transition-duration: 0.5s;
 }
 
 input + .form__checkbox-label--questions::before {
@@ -129,6 +132,7 @@ input:checked + .form__checkbox-label--questions::after {
   border: 1px solid $white;
   border-radius: 5px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .form__error {
@@ -137,7 +141,8 @@ input:checked + .form__checkbox-label--questions::after {
 
 //Стайлгайд
 input:hover + .form__checkbox-label::before {
-  border: 1px solid $black;
+  border: 1px solid $blue;
+  background-color: rgba($white, 0.4);
 }
 
 input:focus + .form__checkbox-label::before {
@@ -146,7 +151,7 @@ input:focus + .form__checkbox-label::before {
 
 input:active + .form__checkbox-label::before {
   outline: none;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .form__item input:hover,
@@ -166,7 +171,8 @@ input:active + .form__checkbox-label::before {
 }
 
 .form__button:hover {
-  border: 1px solid $black;
+  border: 1px solid $blue;
+  background-color: rgba($white, 0.2);
 }
 
 
