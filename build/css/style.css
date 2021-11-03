@@ -875,7 +875,8 @@ img {
   background-color: #ffffff; }
 
 .products-services__link:hover svg {
-  stroke: #00b2ff; }
+  stroke: #00b2ff;
+  transform: scale(1.5); }
 
 .products-services__link:focus {
   outline: 2px solid #666666; }
